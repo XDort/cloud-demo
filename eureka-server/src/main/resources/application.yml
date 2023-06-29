@@ -1,0 +1,9 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eurekaserver # eureka本身也是一个服务，注册中心注册时需要名字
+eureka:
+  client:
+    service-url: # eureka本身也是一个服务，注册要地址信息 集群时有多个
+      defaultZone: http://localhost:10086/eureka
